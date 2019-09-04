@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clipsSubviews="YES" contentMode="scaleToFill" id="iN0-l3-epB" customClass="EmojiKeyBoard">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="223"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="v3c-Rx-NRV">
+                    <rect key="frame" x="0.0" y="186" width="375" height="37"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QHd-nW-Vpv">
+                            <rect key="frame" x="325" y="0.0" width="50" height="37"/>
+                            <color key="backgroundColor" red="0.98028594255447388" green="0.98045331239700317" blue="0.98027533292770386" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="50" id="HGa-Yo-0GE"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
+                            <state key="normal" title="发送">
+                                <color key="titleColor" red="0.50190365314483643" green="0.50199371576309204" blue="0.50189799070358276" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="emojiKeyBoardSend:" destination="iN0-l3-epB" eventType="touchUpInside" id="bNv-YL-mCf"/>
+                            </connections>
+                        </button>
+                        <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JUp-s9-G0O">
+                            <rect key="frame" x="0.0" y="0.0" width="324" height="37"/>
+                            <subviews>
+                                <button hidden="YES" opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MOt-Rq-Eaw">
+                                    <rect key="frame" x="90" y="0.0" width="45" height="37"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="37" id="9Ae-64-FW3"/>
+                                        <constraint firstAttribute="width" constant="45" id="niK-fy-CPx"/>
+                                    </constraints>
+                                    <state key="normal" title="☺"/>
+                                    <connections>
+                                        <action selector="emojiTypeChoose:" destination="iN0-l3-epB" eventType="touchUpInside" id="49B-j0-Ih2"/>
+                                    </connections>
+                                </button>
+                                <button hidden="YES" opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jWx-wM-Qeu">
+                                    <rect key="frame" x="135" y="0.0" width="45" height="37"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="45" id="a7x-id-Wwc"/>
+                                        <constraint firstAttribute="height" constant="37" id="ap3-ud-x27"/>
+                                    </constraints>
+                                    <state key="normal" title="☺"/>
+                                    <connections>
+                                        <action selector="emojiTypeChoose:" destination="iN0-l3-epB" eventType="touchUpInside" id="Aef-ce-gKx"/>
+                                    </connections>
+                                </button>
+                                <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LXu-Rn-LUH">
+                                    <rect key="frame" x="0.0" y="0.0" width="45" height="37"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="45" id="SuA-XF-7QT"/>
+                                        <constraint firstAttribute="height" constant="37" id="iSm-1x-Cwx"/>
+                                    </constraints>
+                                    <state key="normal" title="默认">
+                                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="emojiTypeChoose:" destination="iN0-l3-epB" eventType="touchUpInside" id="VKQ-yX-Ejh"/>
+                                    </connections>
+                                </button>
+                                <button hidden="YES" opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GZJ-fU-scT">
+                                    <rect key="frame" x="45" y="0.0" width="45" height="37"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="45" id="g3v-E8-jbv"/>
+                                        <constraint firstAttribute="height" constant="37" id="v1d-o7-Phw"/>
+                                    </constraints>
+                                    <state key="normal" title="☺"/>
+                                    <connections>
+                                        <action selector="emojiTypeChoose:" destination="iN0-l3-epB" eventType="touchUpInside" id="rG0-r9-OE9"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstItem="jWx-wM-Qeu" firstAttribute="leading" secondItem="MOt-Rq-Eaw" secondAttribute="trailing" id="1d1-PU-Bbr"/>
+                                <constraint firstItem="MOt-Rq-Eaw" firstAttribute="top" secondItem="JUp-s9-G0O" secondAttribute="top" id="7u1-4y-a1u"/>
+                                <constraint firstItem="LXu-Rn-LUH" firstAttribute="leading" secondItem="JUp-s9-G0O" secondAttribute="leading" id="CLa-sp-cQG"/>
+                                <constraint firstItem="LXu-Rn-LUH" firstAttribute="top" secondItem="JUp-s9-G0O" secondAttribute="top" id="DzR-8n-tla"/>
+                                <constraint firstItem="GZJ-fU-scT" firstAttribute="leading" secondItem="LXu-Rn-LUH" secondAttribute="trailing" id="SJe-iD-ioL"/>
+                                <constraint firstAttribute="trailing" secondItem="jWx-wM-Qeu" secondAttribute="trailing" constant="144" id="Zhe-Bf-DgW"/>
+                                <constraint firstItem="GZJ-fU-scT" firstAttribute="top" secondItem="JUp-s9-G0O" secondAttribute="top" id="fCB-t2-bRz"/>
+                                <constraint firstItem="MOt-Rq-Eaw" firstAttribute="leading" secondItem="GZJ-fU-scT" secondAttribute="trailing" id="lF0-Ns-r0m"/>
+                                <constraint firstAttribute="bottom" secondItem="LXu-Rn-LUH" secondAttribute="bottom" id="s6o-r1-tYE"/>
+                                <constraint firstItem="jWx-wM-Qeu" firstAttribute="top" secondItem="JUp-s9-G0O" secondAttribute="top" id="vow-on-4f9"/>
+                            </constraints>
+                        </scrollView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="QHd-nW-Vpv" secondAttribute="trailing" id="0xE-z8-dWS"/>
+                        <constraint firstItem="JUp-s9-G0O" firstAttribute="top" secondItem="v3c-Rx-NRV" secondAttribute="top" id="B3S-jL-Ann"/>
+                        <constraint firstAttribute="height" constant="37" id="B94-hh-8OJ"/>
+                        <constraint firstAttribute="bottom" secondItem="JUp-s9-G0O" secondAttribute="bottom" id="G3z-wa-SIB"/>
+                        <constraint firstAttribute="bottom" secondItem="QHd-nW-Vpv" secondAttribute="bottom" id="OwI-7R-gCh"/>
+                        <constraint firstItem="QHd-nW-Vpv" firstAttribute="leading" secondItem="JUp-s9-G0O" secondAttribute="trailing" constant="1" id="gW3-v4-52p"/>
+                        <constraint firstItem="JUp-s9-G0O" firstAttribute="leading" secondItem="v3c-Rx-NRV" secondAttribute="leading" id="qLc-5o-i4k"/>
+                        <constraint firstItem="QHd-nW-Vpv" firstAttribute="top" secondItem="v3c-Rx-NRV" secondAttribute="top" id="rXS-mY-64q"/>
+                    </constraints>
+                </view>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" bouncesZoom="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="57T-B6-INP">
+                    <rect key="frame" x="0.0" y="18" width="375" height="131"/>
+                    <color key="backgroundColor" red="0.96078431372549022" green="0.96077126260000001" blue="0.96475189920000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="7XM-yM-kgo">
+                        <size key="itemSize" width="50" height="50"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                </collectionView>
+                <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="fQ7-EM-q45">
+                    <rect key="frame" x="168" y="149" width="39" height="37"/>
+                    <color key="pageIndicatorTintColor" red="0.83912390470504761" green="0.83926850557327271" blue="0.83911478519439697" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <color key="currentPageIndicatorTintColor" red="0.5450364351272583" green="0.54513353109359741" blue="0.54503029584884644" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <connections>
+                        <action selector="pageControlClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="m6D-di-cYJ"/>
+                    </connections>
+                </pageControl>
+            </subviews>
+            <color key="backgroundColor" red="0.96066790819168091" green="0.96077126264572144" blue="0.96475189924240112" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="fQ7-EM-q45" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="6Cn-J4-mtU"/>
+                <constraint firstItem="v3c-Rx-NRV" firstAttribute="top" secondItem="57T-B6-INP" secondAttribute="bottom" constant="37" id="JKE-mB-G6A"/>
+                <constraint firstItem="v3c-Rx-NRV" firstAttribute="top" secondItem="fQ7-EM-q45" secondAttribute="bottom" id="K62-jT-bjz"/>
+                <constraint firstItem="57T-B6-INP" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="18" id="UDn-bt-dOS"/>
+                <constraint firstItem="57T-B6-INP" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="oEh-GR-AIb"/>
+                <constraint firstAttribute="trailing" secondItem="57T-B6-INP" secondAttribute="trailing" id="p01-Fk-ivk"/>
+                <constraint firstItem="v3c-Rx-NRV" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="rOG-Bq-rNo"/>
+                <constraint firstAttribute="trailing" secondItem="v3c-Rx-NRV" secondAttribute="trailing" id="uQ6-8e-nDr"/>
+                <constraint firstAttribute="bottom" secondItem="v3c-Rx-NRV" secondAttribute="bottom" id="zfG-PT-KXt"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="emojiCollectionView" destination="57T-B6-INP" id="HKU-KC-Ald"/>
+                <outlet property="pageControl" destination="fQ7-EM-q45" id="1Kd-lp-UHx"/>
+                <outlet property="sendButton" destination="QHd-nW-Vpv" id="Ebu-a8-TBL"/>
+                <outletCollection property="emojiTypeChooseArray" destination="LXu-Rn-LUH" id="ZW7-pL-e8z"/>
+                <outletCollection property="emojiTypeChooseArray" destination="GZJ-fU-scT" id="Fl8-uW-ICC"/>
+                <outletCollection property="emojiTypeChooseArray" destination="MOt-Rq-Eaw" id="SaD-0r-Ck0"/>
+                <outletCollection property="emojiTypeChooseArray" destination="jWx-wM-Qeu" id="glL-lL-fgh"/>
+                <outletCollection property="gestureRecognizers" destination="h5t-2H-MmS" appends="YES" id="81e-qP-Mai"/>
+            </connections>
+            <point key="canvasLocation" x="-1268" y="-1863"/>
+        </view>
+        <tapGestureRecognizer id="h5t-2H-MmS">
+            <connections>
+                <action selector="click:" destination="iN0-l3-epB" id="8oq-D8-m3j"/>
+            </connections>
+        </tapGestureRecognizer>
+    </objects>
+</document>

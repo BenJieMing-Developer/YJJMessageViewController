@@ -1,0 +1,1 @@
+../../../SKFCamera/SKFCamera/TOCroppedImageAttributes.h

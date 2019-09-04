@@ -1,0 +1,36 @@
+{
+  "images" : [
+    {
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "idiom" : "universal",
+      "filename" : "myfollow_bg_cell@2x.png",
+      "scale" : "2x"
+    },
+    {
+      "resizing" : {
+        "mode" : "9-part",
+        "center" : {
+          "mode" : "stretch",
+          "width" : 1,
+          "height" : 1
+        },
+        "cap-insets" : {
+          "bottom" : 129,
+          "top" : 128,
+          "right" : 648,
+          "left" : 440
+        }
+      },
+      "idiom" : "universal",
+      "filename" : "myfollow_bg_cell@3x.png",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "version" : 1,
+    "author" : "xcode"
+  }
+}
