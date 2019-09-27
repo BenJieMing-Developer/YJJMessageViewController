@@ -1,0 +1,13 @@
+platform:ios,'9.0'
+target 'YJJMessageViewController' do
+pod 'AFNetworking'
+pod 'SDWebImage'
+pod 'MBProgressHUD'
+pod 'Masonry'
+pod 'IQKeyboardManager'
+pod 'VoiceConvert'
+pod 'DACircularProgress'
+pod 'TZImagePickerController'
+pod 'SKFCamera'
+pod 'IDMPhotoBrowser'
+end
