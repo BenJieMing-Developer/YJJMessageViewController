@@ -993,7 +993,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 2CHYV2F4HH;
+				DEVELOPMENT_TEAM = 8CBVF9WUR3;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = YJJMessageViewController/Marco/PrefixHeader.pch;
 				INFOPLIST_FILE = YJJMessageViewController/Info.plist;
